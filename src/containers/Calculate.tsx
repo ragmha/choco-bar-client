@@ -202,7 +202,7 @@ const Calculate: React.FC = () => {
           <InnerWrapper>
             <Label>Enter Quantity:</Label>
             <StyledInput name="numberOfBars" type="number" ref={register({ required: true })} />
-            {errors.numberOfBars && <StyledError>This field is required</StyledError>}
+            {errors.numberOfBars && <StyledError>This quantity number is required</StyledError>}
             <StyledInputSubmit type="submit" />
           </InnerWrapper>
         </form>
