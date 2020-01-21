@@ -169,34 +169,36 @@ const Calculate: React.FC = () => {
 
 
   const onSubmit = async (data: any) => {
-
     const submitValue = await request.post('/', {
-      numberOfBars: data.numberOfBars,
+      numberOfBars: Number(data.numberOfBars),
       pricesOfBarPacketBox: [2.30, 25, 230], //TODO: Replace it with API call
       quantitiesOfBarPacketBox: [1, 12, 120] //TODO: Replace it with API call
     })
 
-    if (response.ok) { setResult(submitValue) }
+    if (response.ok) {
+      setResult(submitValue)
+    }
   }
+
+  const resultContainKeys = 'numberOfBars' in result
+    && 'numberOfPacks' in result
+    && 'numberOfBoxes' in result
+    && 'totalCost' in result;
 
   return <OutterWrapper>
     <CalculateWrapper>
       <StyledHeader>SaveMoney Calculator</StyledHeader>
-      {result && result.numberOfBars ?
+      {result && resultContainKeys ?
         <InnerWrapper>
           <InnerWrapperResult >
-            {Object.keys(result).map((item, index) => {
-              return <StyledResult key={index}>
+            {Object.keys(result).map((item) => {
+              return <StyledResult key={item}>
                 <StyledResultLabel>{item}:</StyledResultLabel>
                 <StyledResultValue>{result[item]}</StyledResultValue>
               </StyledResult>
             })}
           </InnerWrapperResult>
-          <Reset onClick={() => setResult({
-            numberOfBars: undefined,
-            pricesOfBarPacketBox: undefined,
-            quantitiesOfBarPacketBox: undefined
-          })}>RESET</Reset>
+          <Reset onClick={() => setResult({})}>RESET</Reset>
         </InnerWrapper> :
         <form onSubmit={handleSubmit(onSubmit)}>
           <InnerWrapper>
