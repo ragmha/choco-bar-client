@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/choco-bar-client/static/css/main.63de37f9.chunk.css",
-    "main.js": "/choco-bar-client/static/js/main.f70229f1.chunk.js",
-    "main.js.map": "/choco-bar-client/static/js/main.f70229f1.chunk.js.map",
+    "main.js": "/choco-bar-client/static/js/main.2516b812.chunk.js",
+    "main.js.map": "/choco-bar-client/static/js/main.2516b812.chunk.js.map",
     "runtime-main.js": "/choco-bar-client/static/js/runtime-main.af9b4c7b.js",
     "runtime-main.js.map": "/choco-bar-client/static/js/runtime-main.af9b4c7b.js.map",
     "static/js/2.f46d3b85.chunk.js": "/choco-bar-client/static/js/2.f46d3b85.chunk.js",
     "static/js/2.f46d3b85.chunk.js.map": "/choco-bar-client/static/js/2.f46d3b85.chunk.js.map",
     "index.html": "/choco-bar-client/index.html",
-    "precache-manifest.e5f3de96d7a964291ac178f4472c2abc.js": "/choco-bar-client/precache-manifest.e5f3de96d7a964291ac178f4472c2abc.js",
+    "precache-manifest.c77ca56fda68b2af0403c63ece500d55.js": "/choco-bar-client/precache-manifest.c77ca56fda68b2af0403c63ece500d55.js",
     "service-worker.js": "/choco-bar-client/service-worker.js",
     "static/css/main.63de37f9.chunk.css.map": "/choco-bar-client/static/css/main.63de37f9.chunk.css.map",
     "static/js/2.f46d3b85.chunk.js.LICENSE": "/choco-bar-client/static/js/2.f46d3b85.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.af9b4c7b.js",
     "static/js/2.f46d3b85.chunk.js",
     "static/css/main.63de37f9.chunk.css",
-    "static/js/main.f70229f1.chunk.js"
+    "static/js/main.2516b812.chunk.js"
   ]
 }
